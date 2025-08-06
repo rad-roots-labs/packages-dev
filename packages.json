@@ -1,0 +1,34 @@
+{
+    "name": "@radroots/dev",
+    "version": "0.0.0",
+    "private": true,
+    "license": "GPLv3",
+    "type": "commonjs",
+    "files": [
+        "dist"
+    ],
+    "bin": {},
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc -w",
+        "clean": "rimraf dist",
+        "lint": "eslint 'src/**/*.{ts,tsx}'",
+        "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+        "test": "jest"
+    },
+    "devDependencies": {
+        "@types/node": "^22.5.0",
+        "@types/yargs": "^17.0.33",
+        "rimraf": "^6.0.1",
+        "ts-node": "^10.9.2",
+        "typescript": "5.8.3"
+    },
+    "dependencies": {
+        "@radroots/radroots-tsconfig": "*",
+        "yargs": "^17.7.2",
+        "zod": "^4.0.5"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
