@@ -10,7 +10,7 @@ import {
     fs_write,
     paths,
     paths_assert,
-} from "../utils";
+} from "../utils/lib";
 
 const argv_schema = z.object({
     routes: z.string(),

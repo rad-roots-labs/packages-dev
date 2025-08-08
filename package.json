@@ -8,7 +8,8 @@
         "dist"
     ],
     "bin": {
-        "generate-localised-routes": "dist/generate-localised-routes/main.js"
+        "generate-localised-routes": "dist/generate-localised-routes/main.js",
+        "generate-themes-css": "dist/generate-themes-css/main.js"
     },
     "scripts": {
         "prebuild": "npm run clean",

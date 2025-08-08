@@ -6,6 +6,10 @@ export function fs_read(path: string): string {
     return readFileSync(path, "utf8");
 }
 
+export function fs_read_json(path: string) {
+    return JSON.parse(readFileSync(path, "utf-8"))
+}
+
 export function fs_write(path: string, contents: string): void {
     writeFileSync(path, contents, "utf8");
 }
