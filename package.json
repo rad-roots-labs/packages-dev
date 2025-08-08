@@ -7,11 +7,15 @@
     "files": [
         "dist"
     ],
-    "bin": {},
+    "bin": {
+        "generate-localised-routes": "dist/generate-localised-routes/main.js"
+    },
     "scripts": {
+        "prebuild": "npm run clean",
         "build": "tsc",
         "dev": "tsc -w",
         "clean": "rimraf dist",
+        "postbuild": "find ./dist/ -type f -name 'main.js' -exec chmod u+x {} \\;",
         "lint": "eslint 'src/**/*.{ts,tsx}'",
         "format": "prettier --write \"src/**/*.{ts,tsx}\"",
         "test": "jest"
@@ -24,7 +28,6 @@
         "typescript": "5.8.3"
     },
     "dependencies": {
-        "@radroots/radroots-tsconfig": "*",
         "yargs": "^17.7.2",
         "zod": "^4.0.5"
     },
