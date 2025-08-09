@@ -1,0 +1,14 @@
+{
+  "extends": "@radroots/tsconfig/tsconfig.cjs.json",
+  "compilerOptions": {
+    "moduleResolution": "Node",
+    "rootDir": "./src",
+    "outDir": "dist",
+    "declaration": false,
+    "declarationMap": false,
+    "emitDeclarationOnly": false,
+    "tsBuildInfoFile": "node_modules/.cache/tsc.dev-utils.cjs.tsbuildinfo"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

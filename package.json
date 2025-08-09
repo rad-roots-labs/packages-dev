@@ -12,14 +12,13 @@
         "generate-themes-css": "dist/generate-themes-css/main.js"
     },
     "scripts": {
+        "build:cjs": "tsc -p tsconfig.cjs.json",
+        "build": "npm run clean && npm run build:cjs",
         "prebuild": "npm run clean",
-        "build": "tsc",
-        "dev": "tsc -w",
-        "clean": "rimraf dist",
         "postbuild": "find ./dist/ -type f -name 'main.js' -exec chmod u+x {} \\;",
-        "lint": "eslint 'src/**/*.{ts,tsx}'",
-        "format": "prettier --write \"src/**/*.{ts,tsx}\"",
-        "test": "jest"
+        "clean": "rimraf dist",
+        "dev": "npm run watch",
+        "watch": "tsc -w"
     },
     "devDependencies": {
         "@radroots/tsconfig": "*",
