@@ -9,6 +9,7 @@
     ],
     "bin": {
         "generate-localised-routes": "dist/generate-localised-routes/main.js",
+        "generate-package-exports": "dist/generate-package-exports/main.js",
         "generate-themes-css": "dist/generate-themes-css/main.js"
     },
     "scripts": {
