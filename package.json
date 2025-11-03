@@ -30,6 +30,7 @@
         "typescript": "5.8.3"
     },
     "dependencies": {
+        "fast-glob": "^3.3.3",
         "yargs": "^17.7.2",
         "zod": "^4.0.5"
     },
