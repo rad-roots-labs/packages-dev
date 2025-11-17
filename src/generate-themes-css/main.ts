@@ -119,7 +119,6 @@ async function main() {
         fs_write(join(out_dir, `${theme_key}.css`), css_content)
         console.log(`Wrote ${join(out_dir, `${theme_key}.css`)}`)
     }
-
     let theme_css_content = "@theme {"
     theme_css_content += `\n${[...all_base_vars].map(v => `${taba()}${v}`).join("\n")}`
     theme_css_content += `\n}`
